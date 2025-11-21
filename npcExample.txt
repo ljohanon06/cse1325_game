@@ -1,0 +1,37 @@
+Dude Man - Name
+100 - Health
+20 - Attack
+12,15 - Position columns,rows
+Cool Sword - Item to give, leave blank if no item
+30 - Item Attack, leave 0 if not weapon
+15 - Rows in image
+      _____
+     /     \
+    | () () |
+     \  ^  /
+      |||||
+     ||||| |
+    |  |||  |
+    |  |||  |
+    |  |||  |
+    |  |||  |
+    |  |||  |
+    |  |||  |
+    |__|||__|
+   /   | |   \
+  |___/   \___|
+Q: Am I Pretty? - Text Start line 1
+R: Extremely GT: 6
+R: Kind Of   GT: 8
+R: No        GT: 7 
+
+return 0
+return 1
+Q: Kind of?
+R: Cute Feet GT: 12
+R: You're Pretty GT: 14
+
+C: Ew
+return 2
+C: Not Good Enough
+return 1
