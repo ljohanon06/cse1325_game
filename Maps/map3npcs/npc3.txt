@@ -1,0 +1,37 @@
+Dude Man
+100
+20
+12,25
+Cool Sword
+30
+15
+      _____
+     /     \
+    | () () |
+     \  ^  /
+      |||||
+     ||||| |
+    |  |||  |
+    |  |||  |
+    |  |||  |
+    |  |||  |
+    |  |||  |
+    |  |||  |
+    |__|||__|
+   /   | |   \
+  |___/   \___|
+Q: Am I Pretty?
+R: Extremely GT: 6
+R: Kind Of   GT: 8
+R: No        GT: 7 
+
+return 0
+return 1
+Q: Kind of?
+R: Cute Feet GT: 12
+R: You're Pretty GT: 14
+
+C: Ew
+return 2
+C: Not Good Enough
+return 1
