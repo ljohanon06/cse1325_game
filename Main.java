@@ -38,7 +38,7 @@ public class Main{
         timer = new javax.swing.Timer (10,e -> {//Occurs every 10 ms
             //Check if player is touching NPC
             int npcIndex = floors[currentFloor].checkTouchNPC(player.getCharacterPos());
-            NPC currNpc = null;                
+            NPC currNpc = null;
 
             if(updateScreen && !fightActive && !fightReady){ //If a button is pressed and a fight isn't happening
                 Display.clearRegion(30,37,50);
@@ -118,17 +118,18 @@ public class Main{
                 if(player.getCurrentHealth() <= 0){ //Player dead
                     fightActive = false;
                     turnOnArrowFrame();
-                    Display.clearRegion(21,40,50);
+                    Display.clearRegion(31,40,50);
                     Display.cursorPosition(31,50);
                     System.out.print("You have lost, please try again!");
                     delay(1500);
                 }else if(currNpc.getCurrentHealth() <= 0){ //NPC dead (fight won)
                     fightActive = false;
                     turnOnArrowFrame();
-                    Display.clearRegion(21,40,50);
+                    Display.clearRegion(31,40,50);
                     Display.cursorPosition(31,50);
                     System.out.print("You have won the fight, congrats!");
                     player.addItem(currNpc, "You found a %s on %s");
+                    floors[currentFloor].removeNPC(npcIndex);
                     delay(1500);
                 }
             }
