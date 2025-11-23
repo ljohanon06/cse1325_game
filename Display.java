@@ -2,11 +2,11 @@ import java.util.*;
 
 public class Display{
 
-    static Scanner scan = new Scanner(System.in);
+    public static Scanner scan = new Scanner(System.in);
 
-    public static void displayImage(String[] image, int x, int y){
+    public static void displayImage(String[] image, int col, int row){
         for(int i = 0; i<image.length; i++){
-            cursorPosition(y+i,x);
+            cursorPosition(row+i,col);
             System.out.print(image[i]);
         }
         
@@ -16,8 +16,8 @@ public class Display{
         System.out.print("\033[2J");
     }
 
-    public static void cursorPosition(int r, int c){
-        System.out.printf("\033[%d;%dH",r,c);
+    public static void cursorPosition(int row, int col){
+        System.out.printf("\033[%d;%dH",row,col);
     }
 
     public static void clearLine(){
@@ -142,7 +142,7 @@ public class Display{
                             break;
                           }
                           rSplit = dialogue[response + currentLine].split(":");
-                          currentLine = Integer.parseInt(rSplit[2].trim()) -1; //add error handling!!!
+                          currentLine = Integer.parseInt(rSplit[2].trim()) -1;
                           break;
                 case 'R': return -1; //Shouldn't happen
                 case 'C': cursorPosition(31,50);

@@ -7,25 +7,25 @@ public class Main{
     //Static elements used so they can be accessed by the timer
 
     //GUI elements for input
-    static JFrame frame;
-    static JPanel arrowPanel;
-    static JPanel attackPanel;
-    static JPanel container;
-    static CardLayout layout;
+    public static JFrame frame;
+    public static JPanel arrowPanel;
+    public static JPanel attackPanel;
+    public static JPanel container;
+    public static CardLayout layout;
 
-    static boolean updateScreen; //Fight button has been pressed
+    public static boolean updateScreen; //Fight button has been pressed
 
-    static boolean fightReady; //Fight ready screen is up
-    static boolean fightActive; //Fight is in progress
-    static char pressed; //Pressed character goes here for fight
-    static char expectedPress; //Required character goes here for fight
-    static long nanoSeconds; //Timing for dealing damage every second
+    public static boolean fightReady; //Fight ready screen is up
+    public static boolean fightActive; //Fight is in progress
+    public static char pressed; //Pressed character goes here for fight
+    public static char expectedPress; //Required character goes here for fight
+    public static long nanoSeconds; //Timing for dealing damage every second
 
-    static Map[] floors; 
-    static int currentFloor;
-    static Player player;
+    public static Map[] floors; 
+    public static int currentFloor;
+    public static Player player;
 
-    static Timer timer; //Holds timer variable
+    public static Timer timer; //Holds timer variable
     public static void main(String[] args){
         double difficulty = setup();
         setupFrame();
@@ -137,11 +137,11 @@ public class Main{
     }
 
     
-
+    //Returns difficulty modifier
     public static double setup(){
         //Load from files
-        floors = new Map[2];
-        for(int i = 0; i<2; i++){
+        floors = new Map[3];
+        for(int i = 0; i<3; i++){
             floors[i] = Map.loadFromFile(String.format("Maps/map%d.txt",i+1), String.format("Maps/map%dnpcs",i+1));
         }
         currentFloor = 0;

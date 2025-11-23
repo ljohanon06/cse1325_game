@@ -64,6 +64,4 @@ public class GameCharacter{
     public void setCharacterPos(Position characterPos) {
         this.characterPos = characterPos;
     }
-    
-    //Functions
 }

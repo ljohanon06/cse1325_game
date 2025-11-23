@@ -26,16 +26,16 @@ public class NPC extends GameCharacter{
         return itemAttack;
     }
 
-    public void setDialogue(String[] d){
-        dialogue = d;
+    public void setDialogue(String[] dialogue){
+        this.dialogue = dialogue;
     }
 
-    public void setItemToGive(String g){
-        itemToGive = g;
+    public void setItemToGive(String itemToGive){
+        this.itemToGive = itemToGive;
     }
 
-    public void setItemAttack(int a){
-        itemAttack = a;
+    public void setItemAttack(int itemAttack){
+        this.itemAttack = itemAttack;
     }
 
 
