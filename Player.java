@@ -34,7 +34,7 @@ public class Player extends GameCharacter{
             Display.cursorPosition(38,50);
             System.out.printf("\u001B[38;5;33m" + prompt + "\u001B[37m", npc.getName(), npc.getItemToGive());
             this.getInventory().add(npc.getItemToGive());
-            if(npc.getItemAttack() != 0){
+            if(npc.getItemAttack() != 0 && npc.getItemAttack() >= this.getAttackStrength()){
                 this.setAttackStrength(npc.getItemAttack());
                 this.setWeaponName(npc.getItemToGive());
             }
