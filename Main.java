@@ -29,6 +29,7 @@ public class Main{
     public static void main(String[] args){
         double difficulty = setup();
         setupFrame();
+        turnOffFrame();
         turnOnArrowFrame();
         
         Display.hide();
@@ -59,7 +60,7 @@ public class Main{
                                 Display.cursorPosition(38,50);
                                 System.out.printf("\u001B[38;5;33m%s has chosen to fight you\u001B[37m", currNpc.getName());
                                 delay(1000);
-                                setupFight();                           
+                                setupFight();
                                 break;
                         case 2: //flee
                                 player.addItem(currNpc, "%s ran away, dropping %s");
@@ -95,6 +96,7 @@ public class Main{
                     Display.displayNPC(currNpc);
                     Display.displayInfo(player,currentFloor);
                 }
+                updateScreen = false;
             }
 
             if(fightActive && System.nanoTime() - nanoSeconds >= difficulty*1000000000l){ //Deals damage every difficulty*1sec
@@ -103,18 +105,8 @@ public class Main{
                 player.setCurrentHealth(player.getCurrentHealth()-currNpc.getAttackStrength());
                 Display.displayInfo(player,currentFloor);
             }
-
-            if(updateScreen && fightActive){ //Fight is in progress and a button has been pressed
+            if(fightActive){
                 currNpc = floors[currentFloor].getEnemies().get(npcIndex);
-                if(pressed == expectedPress){ //Correct letter typed-deal damage and print new letter
-                    currNpc.setCurrentHealth(currNpc.getCurrentHealth()-player.getAttackStrength());
-                    Display.displayNPC(currNpc);
-                    Display.clearRegion(31,40,50);
-                    Display.cursorPosition(31, 50);
-                    expectedPress = (char)(26*Math.random()+65);
-                    System.out.printf("Type \u001B[31m%c\u001B[37m", expectedPress);
-                }
-
                 if(player.getCurrentHealth() <= 0){ //Player dead
                     fightActive = false;
                     turnOnArrowFrame();
@@ -132,6 +124,18 @@ public class Main{
                     floors[currentFloor].removeNPC(npcIndex);
                     delay(1500);
                 }
+            }
+
+            if(updateScreen && fightActive){ //Fight is in progress and a button has been pressed
+                if(pressed == expectedPress){ //Correct letter typed-deal damage and print new letter
+                    currNpc.setCurrentHealth(currNpc.getCurrentHealth()-player.getAttackStrength());
+                    Display.displayNPC(currNpc);
+                    Display.clearRegion(31,40,50);
+                    Display.cursorPosition(31, 50);
+                    expectedPress = (char)(26*Math.random()+65);
+                    System.out.printf("Type \u001B[31m%c\u001B[37m", expectedPress);
+                }
+                updateScreen = false;
             }
         });
         timer.start();       
@@ -198,20 +202,22 @@ public class Main{
         arrowPanel.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e){
-                switch(e.getKeyCode()){
-                    case KeyEvent.VK_UP: player.move(0,floors[currentFloor].getMap());
-                                         updateScreen = true;
-                                         break;
-                    case KeyEvent.VK_RIGHT: player.move(1,floors[currentFloor].getMap());
+                if(!fightActive && !fightReady){
+                    switch(e.getKeyCode()){
+                        case KeyEvent.VK_UP: player.move(0,floors[currentFloor].getMap());
                                             updateScreen = true;
                                             break;
-                    case KeyEvent.VK_DOWN: player.move(2,floors[currentFloor].getMap());
-                                           updateScreen = true;
-                                           break;
-                    case KeyEvent.VK_LEFT: player.move(3,floors[currentFloor].getMap());
-                                           updateScreen = true;
-                                           break;
-                    case KeyEvent.VK_X: frame.setVisible(false); break;
+                        case KeyEvent.VK_RIGHT: player.move(1,floors[currentFloor].getMap());
+                                                updateScreen = true;
+                                                break;
+                        case KeyEvent.VK_DOWN: player.move(2,floors[currentFloor].getMap());
+                                            updateScreen = true;
+                                            break;
+                        case KeyEvent.VK_LEFT: player.move(3,floors[currentFloor].getMap());
+                                            updateScreen = true;
+                                            break;
+                        case KeyEvent.VK_X: frame.setVisible(false); break;
+                    }
                 }
             }
         });
@@ -250,26 +256,19 @@ public class Main{
         frame.requestFocusInWindow();
 
         layout.show(container, "arrow");
-        container.revalidate();
-        container.repaint();
-
-        SwingUtilities.invokeLater(() -> {
-            arrowPanel.requestFocus();
-            arrowPanel.requestFocusInWindow();
-        });
+        arrowPanel.requestFocusInWindow();      
     }
 
     public static void turnOnAttackFrame(){
         frame.setVisible(true);
         frame.toFront();
-        frame.requestFocus();
         frame.requestFocusInWindow();
-
+        
         new Timer(50, e -> {
             layout.show(container, "attack");
             attackPanel.requestFocusInWindow();
             ((Timer)e.getSource()).stop();
-        }).start();
+        }).start();  
     }
 
     public static void turnOffFrame(){
