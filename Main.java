@@ -149,7 +149,7 @@ public class Main{
         for(int i = 0; i<3; i++){
             floors[i] = Map.loadFromFile(String.format("Maps/map%d.txt",i+1), String.format("Maps/map%dnpcs",i+1));
         }
-        currentFloor = 2;
+        currentFloor = 0;
         updateScreen = false;
 
         //Welcome Screen and Inputs
@@ -176,7 +176,7 @@ public class Main{
         Display.clearScreen();
 
         //Set initial values
-        player = new Player(name, null, 500,500,10,floors[0].getEntrance(),null,"Old Sword");
+        player = new Player(name, null, 150,150,10,floors[0].getEntrance(),null,"Old Sword");
         fightReady = false;
         fightActive = false;
         pressed = 1;
