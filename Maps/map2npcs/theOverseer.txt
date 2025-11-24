@@ -1,0 +1,40 @@
+The Overseer
+200
+50
+23,5
+Awakened Crystal
+0
+15
+                 .-.
+                /   \
+               /  .  \
+              /  / \  \
+             |   \_/   |
+             |  ( • )  |    
+             |   \_/   |
+              \  ___  /
+               '-----'
+              /  | |  \
+             /   | |   \
+            /    | |    \
+           /     | |     \
+          /      | |      \
+         /  .-----------.  \
+Q: Face the sheer might of my ancient relic power!
+R: No, screw you. GT: 5
+R: What the hell are you even talking about? GT: 5
+
+Q: Okay! Here! Have this Awakened Crystal! I’m giving them away for free.
+R: No thanks, I’ll pass. GT: 16
+R: How about I KILL YOU. GT: 10
+R: Sure, thanks. GT: 17
+
+Q: I wouldn’t try it.
+R: [fight] GT: 18
+R: Nevermind me, I forgot my bipolar meds GT: 5
+
+C: *donald trump voice* Down the hall, and to the left. Also have this Awakened Crystal.
+return 0
+C: Just take it, I have plenty.
+return 0
+return 1

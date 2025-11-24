@@ -1,0 +1,66 @@
+Mister Know-It-All 
+160
+20
+18,30
+Stiff Knife
+25
+9
+       /////  
+      /( x  x )\
+      |   >    |
+      |  .__.  |
+       \_____/ 
+        /  |  
+    ___/  /|\___
+      /  / \ 
+     /  /   \
+Q: …You there. Haven’t seen you around. What’s with that look on your face?
+R: Just passing through. Looking for some directions. GT: 13
+R: Heard you’re someone who “knows things.” GT: 18
+R: Nothing. Just tired. Long day. GT: 10
+R: You asking because you’re curious or because you’re scared? GT: 27
+
+C: Curious, mostly. Scared… depends on who’s asking.
+return 1
+return 0
+return 1
+C: People who want info usually pay for it.
+return 1
+Q: Then maybe you came to the right guy.
+R: I’ve got a key. Old one. Need to know what it opens. GT: 23
+R: You ever seen a key like this before? GT: 36
+R: Before I pay anything, I need to know you’re not wasting my time. GT: 25
+
+Q: Hmmm… rare shape. Rusty. Could be dungeon-level stuff. Could be trash. 20 gold.
+R: Fine. Here. Talk. GT: 23
+R: That’s steep. I’ll pass. GT: 30
+R: What if I pay you after the info checks out? GT: 11
+
+C: Pleasure! Now I remember things much clearer…
+return 2
+C: More like… you don’t want answers. Suit yourself.
+return 1
+C: No gold, no memory. That simple.
+return 1
+
+Q: Right. Now—what kind of door uses a key like this?
+R: Something hidden. Something not legal. GT: 25
+R: Sounds like you know more than you’re saying. GT: 13
+R: Not my problem. Just tell me where it fits. GT: 23
+R: I’m guessing a basement… maybe a tavern? GT: 18
+
+Q: Basement, huh? And why’d you guess that?
+R: I've heard whispers—folk getting dragged below ground. GT: 36
+R: You flinched when I said tavern. That’s why. GT: 49
+R: Nevermind. Bad guess. Forget it. GT: 10
+R: You’re sweating. Means I hit something. GT: 25
+
+C: Alright, alright—keep your voice down!
+return 2
+
+Q: So it is a tavern basement. Which one?
+R: The Hanged Mare. Back entrance. Door under the barrels. GT: 18
+R: Why should I tell you? GT: 9
+
+C: Fine! It’s the Hanged Mare! Just go!
+return 1

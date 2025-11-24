@@ -61,6 +61,8 @@ public class NPC extends GameCharacter{
             
             return new NPC(name,art,maxHealth,maxHealth,attack,pos,dialogue,item,itemAttack);
         }catch(Exception e){
+            e.printStackTrace();
+            System.out.print(npcFile.getPath());
             return null;
         }
     }

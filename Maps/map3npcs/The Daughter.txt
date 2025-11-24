@@ -1,0 +1,29 @@
+The Daughter
+10
+0
+5,5
+Golden Locket
+0
+12
+      .--.
+     /    \
+    |  /\  |
+    | (__) |
+     \    /
+      '--'
+      |  |
+     /    \
+    |      |
+    |  <3  |
+     \    /
+      '--'
+Q: (A faint cry echoes.) …Dad! Is that you?
+R: I’m here! Hold on! GT: 5
+R: Don’t move. I’m getting the door open. GT: 5
+
+Q: (It’s locked from the outside. Key fits.) Dad… thank God…
+R: You’re safe now. We’re getting out. GT: 9
+R: Can you walk? GT: 9
+
+C: (Footsteps behind them.)
+return 2

@@ -59,7 +59,7 @@ public class Main{
                         case 1: //fight
                                 Display.cursorPosition(38,50);
                                 System.out.printf("\u001B[38;5;33m%s has chosen to fight you\u001B[37m", currNpc.getName());
-                                delay(1000);
+                                delay(3000);
                                 setupFight();
                                 break;
                         case 2: //flee
@@ -149,7 +149,7 @@ public class Main{
         for(int i = 0; i<3; i++){
             floors[i] = Map.loadFromFile(String.format("Maps/map%d.txt",i+1), String.format("Maps/map%dnpcs",i+1));
         }
-        currentFloor = 0;
+        currentFloor = 2;
         updateScreen = false;
 
         //Welcome Screen and Inputs
@@ -176,7 +176,7 @@ public class Main{
         Display.clearScreen();
 
         //Set initial values
-        player = new Player(name, null, 100,100,10,floors[0].getEntrance(),null,"Old Sword");
+        player = new Player(name, null, 500,500,10,floors[0].getEntrance(),null,"Old Sword");
         fightReady = false;
         fightActive = false;
         pressed = 1;

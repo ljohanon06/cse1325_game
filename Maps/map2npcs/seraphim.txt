@@ -1,0 +1,33 @@
+Seraphim
+75
+25
+57,8
+Wings
+0
+13
+                 _______
+              .-'       '-.
+            /   /\   /\    \
+           |   (  '.'  )    |
+           |    \  ^  /     |
+            \    '---'     /
+             '-._______ .-'
+                /  |  \
+          ___  /   |   \   ___
+        .'   './    |    \.'   '.
+       /      /     |     \      \
+      /      /      |      \      \
+     |      /    ___|___    \      |
+Q: I will eradicate you completely!
+R: Are you autistic? GT: 7
+R: Perhaps you have undiagnosed autism? GT: 7
+R: Have you considered an autism test? GT: 7
+R: OKAY. I JUST WANT MY DAUGHTER. WHERE IS SHE? GT: 13
+
+Q: batly torah deiu goda fak im having a stroke hyelp maktu fehree golaod
+R: I’ll take that as a yes. GT: 11
+R: I’m just gonna kill you then GT: 13
+
+C: You rip off its wings to take as a fun souvenir.
+return 0
+return 1

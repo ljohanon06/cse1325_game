@@ -119,6 +119,8 @@ public class Map{
             }
             return new Map(map,npcs,new Position(map[0].length(), map.length), ent, exit);
         }catch(IOException e){
+            System.out.print("error");
+            e.printStackTrace();
             return null;
         }
     }

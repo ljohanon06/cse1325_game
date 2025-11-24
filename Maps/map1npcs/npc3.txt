@@ -1,37 +1,35 @@
-Dude Man
-100
-20
-12,25
-Cool Sword
-30
+Obese Orc
+135
 15
-      _____
-     /     \
-    | () () |
-     \  ^  /
-      |||||
-     ||||| |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |__|||__|
-   /   | |   \
-  |___/   \___|
-Q: Am I Pretty?
-R: Extremely GT: 6
-R: Kind Of   GT: 8
-R: No        GT: 7 
+40,5
+Fat Club
+20
+14
+                   .-''     ''-.
+                 .'             '.
+                /  .--.   .--.     \
+               /  /    \ /    \     \
+              |   | 0  | |  0 |  _   |
+              |   \    / \    / (_)  |
+              |    '.__'   '.__'      |
+              |  .----------------.   |
+               \ |  \  \___/  /  |  / 
+                '._\  '.___.'  /_.'
+                   /'-._____.-'\
+                 .'    / | \    '.
+               .'      /   \      '.
+             .'       /  |  \       '.
+Q: Who are you?
+R: [Kill Him] GT: 5
+R: How are you this ugly? GT: 7
 
-return 0
+C:What are you doing? Stop that-
 return 1
-Q: Kind of?
-R: Cute Feet GT: 12
-R: You're Pretty GT: 14
+Q: Huh? What?
+R: Yeah. Almost like a green glowstick, but like fat. GT: 11
+R: Like your face is messed up. GT: 13
 
-C: Ew
+C: You know what? I don’t like you.
+return 1
+C: You know what? I’m done. I don’t have to take this anymore.
 return 2
-C: Not Good Enough
-return 1

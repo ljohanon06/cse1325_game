@@ -1,0 +1,54 @@
+The Boyfriend
+250
+30
+5,8
+Basement Key
+0
+11
+      ____
+    /      \
+   |  -  -  |
+   |   <    |
+   |  ____  |
+    \      /
+     |    |
+    /|    |\
+   / |    | \
+  /  |    |  \
+ /   |    |   \
+Q: …Wow. Unbelievable. You really came for her.
+R: And you must be the reason she was locked up. GT: 5
+R: Move. Now. GT: 9;
+
+Q: Relax. I kept her safe. She’s better with me than out there.
+R: You chained her in a basement. GT: 13
+R: This ends now, kid. GT: 9
+
+Q: No. She stays here. And YOU leave.
+R: Try and make me. GT: 13
+R: Last warning. GT: 20
+
+C: (He charges forward!)
+return 1
+
+C: (He slams the father into the wall.)
+return 1
+
+Q: (Boyfriend barely breathing) Why are you going so far for her?!
+R: Because she’s my daughter. GT: 27
+R: Because you don’t own her. GT: 27
+
+Q: Dad—stop, stop! Don’t kill him!
+R: After what he did… he deserves it. GT: 33
+R: …Fine. Only for you. GT: 37
+
+C: (Boyfriend groans, beaten.)
+
+Q: Let’s go home… please.
+R: Stay close. We’re getting out of here. GT: 41
+R: Okay, anyone else shows up, I’ll handle them. GT: 41
+
+C: (They leave the basement behind.)
+return 2
+
+

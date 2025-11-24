@@ -1,0 +1,43 @@
+Warden
+125
+20
+68,8
+Sharp Axe
+20
+17
+                /\
+              _/  \_
+          ---/      \---
+            /  .::.  \
+           |  (-_- )  |
+           |    |     |
+        ___|  \ | /   |___
+       /   |   \|/    |   \
+      /    |    |     |    \
+     |     |    |     |     |
+     |     |    |     |     |
+      \    |    |     |    /
+       \   |    |     |   /
+        \  |    |     |  /
+         \ |    |     | /
+          \|    |     |/
+        ___|    |     |___
+Q: Make way for thy holiness!
+R: Some heretic you are. GT: 7
+R: Your cult is absolutely wretched. GT: 13
+R: You engineered this delusional religion of yours? GT: 13
+R: I guess corrupted beasts like you have no place in this world. GT: 13
+
+Q: A heretic I am not. I am an architect. An engineer! A true innovator of the masses.
+R: No, you’re dumb, delusional, and a moron living in his own world. GT: 11
+R: Shut up. GT: 11
+
+C: Have it your way, fiend!
+return 1
+Q: I possess a strong distaste for your attitude.
+R: What are you gonna do about it? GT: 12
+R: What are you? Some evolved form of the plague? GT: 18
+R: You’re a nerd, right? Roll initiative, idiot! GT: 11
+
+C: No, I’m your worst nightmare…
+return 1

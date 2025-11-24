@@ -1,37 +1,68 @@
-Dude Man
+Greedy Goblin
 100
-20
-12,15
-Cool Sword
-30
-15
-      _____
-     /     \
-    | () () |
-     \  ^  /
-      |||||
-     ||||| |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |__|||__|
-   /   | |   \
-  |___/   \___|
-Q: Am I Pretty?
-R: Extremely GT: 6
-R: Kind Of   GT: 8
-R: No        GT: 7 
+25
+41,46
+Old Key
+0
+11
+      ,      ,
+         /(.-""-.)\
+     |\  \/      \/  /|
+     | \ / =.  .= \ / |
+     \( \   o\/o   / )/
+      \_, '-/  \-' ,_/
+        /   \__/   \
+        \ \__/\__/ /
+      ___\ \|--|/ /___
+    /`    \      /    `\
+   /       '----'        \
+Q: Hello, Traveller! Are you looking for gold as well?
+R: You could say that, yeah GT: 11
+R: Not at this particular moment GT: 13
+R: Y'know for a booger, you're actually pretty smart. GT: 36
+R: Not that I'd be sharing any for a rascal like you. GT: 25
+R: I'm actually looking for someone GT:45
 
 return 0
 return 1
-Q: Kind of?
-R: Cute Feet GT: 12
-R: You're Pretty GT: 14
-
-C: Ew
 return 2
-C: Not Good Enough
+C: WELL- NONE OF IT'S FOR YOU, SO BEAT IT, KID. 
+return 1
+Q: Hmm... I don't like your tone...
+R: I'm really looking for a girl. Kinda short, well-dressed, would you know anything? GT: 18
+R: I mean, I could always look for some later GT: 11
+R: Well, you're not my mom, so... GT: 25
+
+Q: Mmmmm... Okay... How about this? You give me 30 gold, and I'll give you this key. I bet it'd help...
+R: Sounds like a deal GT: 23
+R: I don't have that kinda money GT: 30
+R: Y'know what? Screw you GT: 27
+
+C: WAHAHAHA! I'm rich! Bye, loser!
+return 2
+C: Okay, y'know what? I don't like you. Die, loser.
+return 1
+C: Well, screw you too, buddy!
+return 1
+
+Q: Hmmm... tough luck, pal. Guess you're not getting this key then.
+R: How about I just kill you instead GT: 9
+R: Tough talk for three experience GT: 9
+R: Did mommy have some tough luck raising you? GT: 25
+R: Guess I'll just be on my way then GT: 10
+
+Q: What'd you call me?
+R: You really need me to spell it out for you? Nevermind, then. GT: 49
+R: B-O-O-G-E-R. GT: 25
+R: I called you smart. That's a good thing. GT: 42
+R: Nothing GT: 10
+
+C: Well, thanks, pal! You just made my day!
+return 2
+
+Q: Oh? And who would that be?
+R: An idiot like you. Someone to beat up. GT: 9
+R: A good woman. Short, flowy hair, some kinda blouse. Would you know anything? GT: 18
+
+C: What? Oh I see you're acting clever. Have it your way, then.
 return 1

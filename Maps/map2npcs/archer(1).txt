@@ -1,0 +1,34 @@
+Archer
+145
+20
+49,48
+Long Bow
+30
+14
+            /\ 
+           /  \ 
+         _/ /\ \_
+       _/  /  \  \_
+      /   / /\ \   \
+      |  | (··) |  |
+      |  |  ||  |  |
+    __|  |  ||  |  |__
+   /  |  |  ||  |  |  \
+  /   |  |  ||  |  |   \
+ /    |  |  ||  |  |    \
+|     |  |  ||  |  |     |
+|     |  |  ||  |  |     |
+ \    |  |  ||  |  |    /
+Q: Come sink your teeth in! 
+R: Hah! Can’t even spare half of a life? GT: 5
+R: Why would I do that? GT: 8
+
+C: Fine then, I will hunt you down…
+return 1
+
+Q: Because I said so!
+R: Okay [Bite] GT: 12
+R: No GT: 5
+
+C: Agh! I didn’t think you’d actually do it! I’m outta here!
+return 2

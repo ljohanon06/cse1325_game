@@ -1,37 +1,73 @@
-Dude Man
-100
-20
-12,20
-Cool Sword
-30
-15
-      _____
-     /     \
-    | () () |
-     \  ^  /
-      |||||
-     ||||| |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |  |||  |
-    |__|||__|
-   /   | |   \
-  |___/   \___|
-Q: Am I Pretty?
-R: Extremely GT: 6
-R: Kind Of   GT: 8
-R: No        GT: 7 
+Black Knight
+150
+35
+19,11
+Studded Shield
+0
+25
+                /^\
+               /   \
+              |  O  |
+              | \_/ |
+        ______|     |______
+      /`      \     /      `\
+     /         '---'         \
+    |                         |
+    |    t               t    |
+    |           ___           |
+     \        /#####\        /
+      \______/#######\______/
+         |   |#######|   |
+         |   |#######|   |
+         |   |#######|   |
+         |   |#######|   |
+        /     \#####/     \
+       /  /\    \#/    /\  \
+      /  /  \         /  \  \
+     /  /    \_______/    \  \
+        |       | |       |
+        |       | |       |
+        |       | |       |
+        |_______| |_______|
+         (______) (______)
+Q: HALT. State your purpose!
+R: Shut up. GT: 9
+R: I’m here to get back the princess. And to teach some manners to all of you. GT: 9
+R: I’m here to rescue the princess! GT: 11
+R: I’m here to kill you GT: 22
+R: Don’t you know how dumb you look in that costume? GT: 24
 
 return 0
 return 1
-Q: Kind of?
-R: Cute Feet GT: 12
-R: You're Pretty GT: 14
-
-C: Ew
 return 2
-C: Not Good Enough
+Q: The princess? For what business would you have with the royalty of this continent?
+R: I have business with my daughter. No one else. GT: 16
+R: The way you talk is starting to annoy me GT: 18
+R: I possess a warning that relates to the grandiose monarchy and the kingdom as a whole! A most important message indeed! GT: 20
+
+C: Then I can assure you will not be making it any further. 
 return 1
+C: Hmph! I have no more to say to you then.
+return 1
+C: My lord! The situation must be dire! You may enter!
+return 2
+C: Fine, but we fight like men, the old fashioned way.
+return 1
+Q: Wha-? *ahem*. Stay civil, sir. Remember your signed pact at the beginning of the Gambler’s Renaissance Fair. 
+R: It looks like it was made with a budget of three dollars. GT: 28
+R: It looks like it was made with love and care.
+
+Q: Okay, dude. I made this myself. It cost like a thousand to get the fabric nice.
+R: A thousand pennies maybe. Poor you. GT: 32
+R: Dang, now I feel bad.  GT: 34
+
+C: Okay, you wanna start a fight? Fine.
+return 1
+C: Yeah. I don’t even wanna be here anymore. I’m out.
+return 2
+Q:It was…
+R: And stupidity. GT: 40
+R: I’ll just be going then. GT: 8
+
+C:DANGIT! YOU’LL PAY FOR THIS ONE DAY, YOU MEANIE HEAD!
+return 2
