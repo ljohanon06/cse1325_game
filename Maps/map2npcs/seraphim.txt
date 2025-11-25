@@ -1,6 +1,6 @@
 Seraphim
 75
-25
+100
 57,8
 Wings
 0

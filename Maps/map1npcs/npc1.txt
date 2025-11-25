@@ -1,5 +1,5 @@
 Greedy Goblin
-100
+250
 25
 41,46
 Old Key

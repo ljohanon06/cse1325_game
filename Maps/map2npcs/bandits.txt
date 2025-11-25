@@ -18,12 +18,13 @@ Flimsy Dagger
    |   /  \     |
    |  /____\    |
    |            |
-Q: A beast like me? Do you dare to trust me? GT: 7
-R: Your greed for power sickens me. GT: 7
-R: Go back in solitude where you belong! GT: 7
-R: I’m not fearful of anything! I will take you down! GT: 7
-R: I only have pure hatred for you. GT: 7
-R: I’m already tired of pretending. Can I just get past all of you? GT: 8
+Q: A beast like me? Do you dare to trust me? GT: 8
+R: Your greed for power sickens me. GT: 8
+R: Go back in solitude where you belong! GT: 8
+R: I’m not fearful of anything! I will take you down! GT: 8
+R: I only have pure hatred for you. GT: 8
+R: I’m already tired of pretending. Can I just get past all of you? GT: 9
+
 return 1
 C: Sure
 return 2

@@ -1,6 +1,6 @@
 Mister Know-It-All 
-160
-20
+260
+25
 18,30
 Stiff Knife
 25
